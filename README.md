@@ -26,30 +26,38 @@ Writeups/
 - A GitHub account
 - SSH key added to GitHub **or** use HTTPS
 
-### 1. Get access
-Ask **@suyog-jadhav** to add you as a collaborator on the repo.  
-You'll get an email invite — accept it.
+### 1. Fork the repo
+1. Go to **[github.com/suyog-jadhav/ByteMeCTF-WriteUps](https://github.com/suyog-jadhav/ByteMeCTF-WriteUps)**
+2. Click **Fork** (top-right) → **Create fork**
+3. This creates `github.com/<your-username>/ByteMeCTF-WriteUps` under your account
 
-### 2. Clone the repo
+### 2. Clone your fork
 ```bash
-git clone git@github.com:suyog-jadhav/ByteMeCTF-WriteUps.git
+git clone git@github.com:<your-username>/ByteMeCTF-WriteUps.git
 cd ByteMeCTF-WriteUps
 ```
-> Using HTTPS instead? Replace the URL with:
-> `https://github.com/suyog-jadhav/ByteMeCTF-WriteUps.git`
+> Using HTTPS? Replace with:
+> `https://github.com/<your-username>/ByteMeCTF-WriteUps.git`
+
+### 3. Add the upstream remote (one-time)
+This lets you pull new changes from the original repo later:
+```bash
+git remote add upstream git@github.com:suyog-jadhav/ByteMeCTF-WriteUps.git
+```
 
 ---
 
 ## ✍️ Adding Your Writeup (Every Time)
 
-### Step 1 — Pull the latest changes
-Always start from an up-to-date `main`:
+### Step 1 — Sync your fork with upstream
+Always start from a clean, up-to-date `main`:
 ```bash
 git checkout main
-git pull origin main
+git pull upstream main
+git push origin main
 ```
 
-### Step 2 — Create your branch
+### Step 2 — Create a branch
 Name your branch `<yourname>/<challenge-name>`:
 ```bash
 git checkout -b alice/web-sqli-0
@@ -173,17 +181,17 @@ Use a clear commit message:
 - ❌ `added stuff`
 - ❌ `writeup`
 
-### Step 7 — Push your branch
+### Step 7 — Push your branch to your fork
 ```bash
 git push origin alice/web-sqli-0
 ```
 
 ### Step 8 — Open a Pull Request
-1. Go to **[github.com/suyog-jadhav/ByteMeCTF-WriteUps](https://github.com/suyog-jadhav/ByteMeCTF-WriteUps)**
+1. Go to **your fork** on GitHub: `github.com/<your-username>/ByteMeCTF-WriteUps`
 2. You'll see a banner: **"Compare & pull request"** — click it
 3. Set:
-   - **base:** `main`
-   - **compare:** `alice/web-sqli-0`
+   - **base repository:** `suyog-jadhav/ByteMeCTF-WriteUps` → **base:** `main`
+   - **head repository:** `<your-username>/ByteMeCTF-WriteUps` → **compare:** `alice/web-sqli-0`
 4. Title: `[Web] SQLi 0 — writeup by Alice`
 5. Click **Create pull request**
 
@@ -207,7 +215,7 @@ Before opening a PR, make sure:
 
 ## ⚠️ Rules
 
-- **Never push directly to `main`** — always use a branch + PR
+- **Always work from a fork** — never push directly to the upstream `main`
 - **Only edit files inside your own folder** (`Writeups/<your-name>/`)
 - **Don't commit sensitive data** — no private keys, credentials, or personal info beyond what's in the challenge
 - Keep the `referenc/` folder out of your commits (it's in `.gitignore` for a reason)
@@ -216,10 +224,11 @@ Before opening a PR, make sure:
 
 ## 🆘 Common Issues
 
-**Conflict when pushing?**
+**Upstream has new changes and your branch is behind?**
 ```bash
 git checkout main
-git pull origin main
+git pull upstream main
+git push origin main
 git checkout alice/web-sqli-0
 git rebase main
 git push origin alice/web-sqli-0 --force-with-lease
@@ -228,14 +237,14 @@ git push origin alice/web-sqli-0 --force-with-lease
 **Wrong branch? Start over cleanly:**
 ```bash
 git checkout main
-git pull origin main
+git pull upstream main
 git checkout -b alice/correct-branch-name
 ```
 
-**Forgot to pull before starting?**
+**Forgot to sync before starting?**
 ```bash
-git fetch origin
-git rebase origin/main
+git fetch upstream
+git rebase upstream/main
 ```
 
 ---
