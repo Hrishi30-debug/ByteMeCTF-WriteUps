@@ -42,8 +42,12 @@ The page displays:
 Clicking **"Enter vault"** triggers a POST request to `/enter`. The counter increments to `1 Soul Fragment`, and the status updates to:
 > *"A Soul Fragment has been collected."*
 
+![Soul Fragment Collected](resources/soul_trial_collected.png)
+
 However, clicking **"Enter vault"** a second time immediately results in an error message:
 > *"The vault refuses another entry so soon. Let the signal settle before trying again."*
+
+![Rate Limit Cooldown Rejection](resources/soul_trial_ratelimit.png)
 
 Inspecting browser DevTools (Network tab), we observe that the second request failed with HTTP status code `429 Too Many Requests`:
 ```json
@@ -53,6 +57,8 @@ Inspecting browser DevTools (Network tab), we observe that the second request fa
   "count": 1
 }
 ```
+
+![Network Tab 429 Too Many Requests](resources/soul_trial_devtools_429.png)
 
 Repeatedly clicking the button while rate-limited eventually escalates to HTTP 403 Forbidden:
 ```json
@@ -227,12 +233,12 @@ $ python solve_trial.py
 [🏆] FLAG: OWASP{the_soul_vault_has_been_opened}
 ```
 
-![Rate Limit Bypass & Fragment Accumulation](resources/soul_trial_solve.png)
-
 The server verifies that the target threshold of 20 fragments has been reached and outputs the flag:
 ```
 OWASP{the_soul_vault_has_been_opened}
 ```
+
+![Soul Trial Solved with Flag](resources/soul_trial_complete.png)
 
 ## Solution Summary
 

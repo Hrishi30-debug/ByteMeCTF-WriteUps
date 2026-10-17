@@ -33,10 +33,18 @@ Navigating to the application root displays a minimalist terminal interface titl
 - `/signal` — The transmission terminal where users can upload an audio file for signal processing.
 - `/archive` — A restricted records page displaying: *"No public records are available."*
 
+![Signal Console Transmission Terminal](resources/signal_console_ui.png)
+
+Visiting `/archive` confirms that no public records or transmissions are listed directly on the frontend:
+
+![Signal Console Archive Records](resources/signal_console_archive.png)
+
 Inspecting `/signal` reveals the input specification:
 > *"Upload a mono, 16-bit WAV sampled at 8 kHz. Transmissions must be between 0.5 and 120 seconds."*
 
-When submitting an arbitrary audio file, the application attempts to process the file stream and either returns *"Signal processing failed."* or prints the decoded output in a `<pre>` tag under *"Console output"*.
+When submitting an arbitrary or non-modulated audio file, the application attempts to process the file stream and returns *"Signal processing failed."*:
+
+![Signal Processing Failure on Invalid Signal](resources/signal_console_error.png)
 
 ## Step 2 — Source Code & Signal Processing Analysis
 
@@ -265,8 +273,6 @@ We upload `exploit.wav` via `curl` to the target `/signal` endpoint:
 curl -X POST https://byteme-morse-audio-ssti.onrender.com/signal \
      -F "audio=@exploit.wav"
 ```
-
-![Synthesized Audio Exploit Execution](resources/signal_console_solve.png)
 
 ### Server Response:
 ```html
