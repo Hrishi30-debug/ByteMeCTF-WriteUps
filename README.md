@@ -255,5 +255,5 @@ git rebase upstream/main
 |---|---|
 | Suyog Jadhav | [@suyog-jadhav](https://github.com/suyog-jadhav) |
 | Narendra Lomate | [@narendralomate2006](https://github.com/narendralomate2006) |
+| Pratik Jadhav | [@Pratik8262](https://github.com/Pratik8262) |
 
-*Add your row here when you submit your first writeup PR!*

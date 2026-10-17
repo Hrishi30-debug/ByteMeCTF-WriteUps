@@ -29,6 +29,10 @@ OWASP{byteme_soul_fragment_race}
 
 ## Step 1 — Exploring the Application & State Machine
 
+Navigating to `/login` presents the user authentication interface:
+
+![Soul Fragment Race Login Page](resources/soul_fragment_race_login.png)
+
 Registering a new account and logging in directs the user to the Soul Vault dashboard (`/`):
 
 ![Soul Fragment Dashboard](resources/soul_fragment_race_dashboard.png)
@@ -58,6 +62,8 @@ Clicking **"Initiate Recovery"** issues a POST request to `/vault/recover`:
 }
 ```
 
+![Recovery Attempt Initiated](resources/soul_fragment_race_recovery_token.png)
+
 A short moment later, the UI indicates the attempt transitioned from `reserved` to `verified`. However, clicking **"Claim Fragment"** triggers an error:
 ```json
 {
@@ -66,8 +72,7 @@ A short moment later, the UI indicates the attempt transitioned from `reserved` 
 }
 ```
 
-![Single Attempt Rejected](resources/soul_fragment_race_rejected.png)
-
+![Single Attempt Claim Rejection](resources/soul_fragment_race_rejected.png)
 
 ## Step 2 — Source Code Audit (`app.py`)
 
@@ -285,9 +290,13 @@ $ python solve_race.py
 [🏆] FLAG: OWASP{byteme_soul_fragment_race}
 ```
 
-![Race Condition Exploit Execution](resources/soul_fragment_race_solve.png)
+The server accepted the overlapping proofs, updated the user state, and returned the flag:
 
-The server accepted the overlapping proofs and returned the flag!
+![Awakened Soul Vault Dashboard](resources/soul_fragment_race_awakened.png)
+
+Querying `/api/status` now confirms that the user holds 7/7 fragments and the vault status is `awakened`:
+
+![API Status Telemetry](resources/soul_fragment_race_api_status.png)
 
 ## Solution Summary
 

@@ -33,7 +33,13 @@ Visiting the landing page (`/`) introduces the lore of the Three Guardians and t
 
 ![Soul Split Landing Page](resources/soul_split_landing.png)
 
-Navigating to `/soul/fragment` while unauthenticated renders a locked error page (`locked.html` with HTTP 403 Forbidden).
+Checking `/soul/history` displays the historical record of soul transfers:
+
+![Soul Transfer History Ledger](resources/soul_split_history.png)
+
+Attempting to access `/soul/fragment` directly while unauthenticated renders the locked seal:
+
+![Locked Fragment Interface](resources/soul_split_locked.png)
 
 The application exposes the following endpoints:
 - `GET /` — Status page showing whether the Third Guardian is awakened.
@@ -44,6 +50,8 @@ The application exposes the following endpoints:
 
 Attempting a standard transfer via `POST /soul/transfer` with `recipient=admin&amount=100` immediately yields HTTP 403 Forbidden with a `rejected.html` page:
 > *"The Guardians reject this transmission."*
+
+![Transmission Rejected by Guardians](resources/soul_split_rejected.png)
 
 ## Step 2 — Source Code Audit (`app.py`)
 
