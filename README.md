@@ -254,5 +254,6 @@ git rebase upstream/main
 | Name | GitHub |
 |---|---|
 | Suyog Jadhav | [@suyog-jadhav](https://github.com/suyog-jadhav) |
+| Narendra Lomate | [@narendralomate2006](https://github.com/narendralomate2006) |
 
 *Add your row here when you submit your first writeup PR!*
