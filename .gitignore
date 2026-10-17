@@ -1,0 +1,13 @@
+# Exclude reference documents (local use only)
+referenc/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
