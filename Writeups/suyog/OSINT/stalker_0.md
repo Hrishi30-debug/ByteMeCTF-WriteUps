@@ -1,4 +1,4 @@
-Stalker 0 (OSINT, Easy)
+# Stalker 0 (OSINT, Easy)
 
 **Author:** Suyog Jadhav  
 **Category:** OSINT  
