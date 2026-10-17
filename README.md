@@ -73,43 +73,82 @@ Writeups/
 ### Step 4 — Write your writeup
 Create `Writeups/<yourname>/<category>/<challenge-name>.md` using this template:
 
-```md
+~~~md
 # Challenge Name (Category, Difficulty)
 
 **Author:** Your Name
-**Category:** Web / OSINT / Crypto / ...
+**Category:** Web / OSINT / Crypto / Pwn / Rev / Forensics / Misc
 **Difficulty:** Easy / Medium / Hard
 
 ## Challenge Description
-> Paste the challenge description here.
+
+> Paste the exact challenge description here.
 
 ## Summary
-Brief overview of the approach used to solve the challenge.
+
+One or two sentences explaining what the vulnerability/approach was and how you solved it.
+No spoilers here — just the high level idea.
 
 ## Flag
+
 ```
-FLAG{...}
+CTF{your_flag_here}
 ```
 
-## Step 1 — ...
+---
 
-Explain what you did.
+## Step 1 — Descriptive title of what you did
 
-## Step 2 — ...
+Explain what you did and why. Be clear enough that someone learning
+can follow along.
 
-Add screenshots where helpful:
-![Description](resources/screenshot.png)
+```bash
+# any commands you ran
+tool --flag target
+```
+
+![Screenshot description](resources/screenshot1.png)
+
+## Step 2 — Next step title
+
+Continue the walkthrough. Add as many steps as needed.
+
+```
+any output / responses you got
+```
+
+![Another screenshot](resources/screenshot2.png)
+
+## Step 3 — ...
+
+## Solution Summary
+
+| Field      | Value       |
+|------------|-------------|
+| Key info 1 | value       |
+| Key info 2 | value       |
+
+## Root Cause / OSINT Methodology / Vulnerability Explanation
+
+Explain *why* this worked. What was the underlying flaw or technique?
+
+1. **Point 1** — explanation
+2. **Point 2** — explanation
+3. **Point 3** — explanation
 
 ## Tools Used
-- Tool 1
-- Tool 2
+
+- Tool 1 — what you used it for
+- Tool 2 — what you used it for
 
 ## Timeline
 
 | Step | Action | Result |
-|---|---|---|
-| 1 | ... | ... |
-```
+|------|--------|--------|
+| 1    | Did X  | Got Y  |
+| 2    | Did A  | Got B  |
+~~~
+
 
 ### Step 5 — Add your screenshots / files
 Place all images and supporting files inside `resources/`:
