@@ -1,0 +1,5 @@
+FLAG:
+OWASP{th3_st0n3k33p3r_wh1sp3rs_1nt0_th3_v01d}
+
+METHOD:
+strings soul_echo | grep OWASP

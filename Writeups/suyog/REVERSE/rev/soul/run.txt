@@ -1,0 +1,1 @@
+gcc soul_whisper.c -o soul_whisper -O0

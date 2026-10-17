@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  soul-archive-thanos:
+    build: .
+    container_name: soul_archive_thanos_pwn
+    ports:
+      - "1339:1339"
+    restart: always

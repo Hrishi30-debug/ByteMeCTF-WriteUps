@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  soul-stone:
+    build: .
+    container_name: soul_stone_pwn
+    ports:
+      - "1337:1337"
+    restart: always
