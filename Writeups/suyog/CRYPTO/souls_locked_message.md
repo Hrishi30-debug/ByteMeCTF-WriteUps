@@ -16,9 +16,6 @@
 >  
 > **Flag Format:** `OWASP{...}`
 
-### Provided Hints
-- **Hint 1:** *“RSA is only as strong as the difficulty of factoring $n$.”*
-
 ### Given Parameters
 ```text
 === Soul's Locked Message ===

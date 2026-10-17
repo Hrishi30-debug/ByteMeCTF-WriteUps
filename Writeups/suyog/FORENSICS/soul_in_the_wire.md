@@ -18,16 +18,11 @@
 >  
 > **Flag Format:** `OWASP{...}`
 
-### Provided Hints
-- **Hint 1:** *“Don't trust what the packets say. Look at what the packets are.”*
-- **Hint 2:** *“Six fragments. Six different ways of hiding a soul.”*
-- **Hint 3:** *“Timing, identity, order, size, direction, and absence can all tell a story.”*
-
 **Attachment:** [`soul_stone.pcap`](https://drive.google.com/file/d/11M_2j3q_NjmnAh5X_gv3ig_sVqyunnSS/view?usp=sharing)
 
 ## Summary
 
-The challenge provides a large network capture (`soul_stone.pcap`) filled with decoys and background traffic. Naive string searches on packet payloads only expose misleading fake flags. Solving the challenge requires extracting six covert communication fragments hidden across different layer 3/4 network metadata and covert channels corresponding directly to Hint 3: **Timing** (DNS query intervals), **Identity** (ICMP identifier headers), **Order** (TCP sequence ordering), **Size** (UDP packet lengths), **Direction** (reverse TCP server-to-client flows), and **Absence** (gaps in expected TCP sequence numbers). Reconstructing these fragments reveals the true hidden message: `THE SOUL IS FOUND IN THE METADATA`.
+The challenge provides a large network capture (`soul_stone.pcap`) filled with decoys and background traffic. Naive string searches on packet payloads only expose misleading fake flags. Solving the challenge requires extracting six covert communication fragments hidden across different layer 3/4 network metadata and covert channels: **Timing** (DNS query intervals), **Identity** (ICMP identifier headers), **Order** (TCP sequence ordering), **Size** (UDP packet lengths), **Direction** (reverse TCP server-to-client flows), and **Absence** (gaps in expected TCP sequence numbers). Reconstructing these fragments reveals the true hidden message: `THE SOUL IS FOUND IN THE METADATA`.
 
 ## Flag
 
@@ -273,7 +268,7 @@ Examining the sequence counter reveals an intentional gap:
 - Frame `207311` jumps to `301`
 - Frame `207312` has sequence `401`
 
-Sequence number `201` is conspicuously absent. In alignment with Hint 3 (*"absence can tell a story"*), this negative space completes the clue chain pointing to `THE METADATA`.
+Sequence number `201` is conspicuously absent. This deliberate negative space / transmission gap completes the clue chain pointing to `THE METADATA`.
 
 ![Fragment 6 — Missing TCP Sequence Gap](resources/fragment6_missing_packet.png)
 
@@ -283,7 +278,7 @@ Sequence number `201` is conspicuously absent. In alignment with Hint 3 (*"absen
 
 Combining the 6 recovered fragments:
 
-| Fragment # | Channel Modality (Hint 3) | Extracted Value |
+| Fragment # | Channel Modality | Extracted Value |
 |:---:|:---:|:---:|
 | 1 | **Timing** (DNS query intervals) | `THE` |
 | 2 | **Identity** (ICMP identifier headers) | `SOUL` |
