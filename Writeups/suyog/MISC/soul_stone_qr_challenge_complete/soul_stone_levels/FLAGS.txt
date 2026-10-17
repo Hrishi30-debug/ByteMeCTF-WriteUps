@@ -1,0 +1,7 @@
+Level 0: OWASP{Th3_f1rst_fr4gm3nt}
+Level 1: OWASP{Sh4tt3r3d_m3m0r13s}
+Level 2: OWASP{Tru3_s0ul_0r_f4ls3}
+Level 3: OWASP{Th3_l0st_3dg3}
+Level 4: OWASP{J3dg3m3nt_0f_V0rm1r}
+Level 5: OWASP{W3lc0m3_t0_th3_s0ul_w0rld}
+Level 6: OWASP{Th3_S0ul_St0n3_1s_wh0l3}

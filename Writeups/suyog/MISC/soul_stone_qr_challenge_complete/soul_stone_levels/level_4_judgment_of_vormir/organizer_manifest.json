@@ -1,0 +1,527 @@
+{
+  "level": 4,
+  "name": "judgment_of_vormir",
+  "grid": 7,
+  "tile_size": 171,
+  "decoys": 8,
+  "rotations": true,
+  "flips": false,
+  "seed": 20261004,
+  "flag": "OWASP{J3dg3m3nt_0f_V0rm1r}",
+  "message": "SOUL STONE // JUDGMENT OF VORMIR // OWASP{J3dg3m3nt_0f_V0rm1r}",
+  "pieces": [
+    {
+      "file": "piece_001.png",
+      "source_row": 4,
+      "source_col": 4,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_002.png",
+      "source_row": 6,
+      "source_col": 4,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_003.png",
+      "source_row": 6,
+      "source_col": 0,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_004.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_005.png",
+      "source_row": 5,
+      "source_col": 2,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_006.png",
+      "source_row": 0,
+      "source_col": 6,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_007.png",
+      "source_row": 0,
+      "source_col": 4,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_008.png",
+      "source_row": 3,
+      "source_col": 5,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_009.png",
+      "source_row": 0,
+      "source_col": 1,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_010.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_011.png",
+      "source_row": 1,
+      "source_col": 2,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_012.png",
+      "source_row": 2,
+      "source_col": 5,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_013.png",
+      "source_row": 6,
+      "source_col": 3,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_014.png",
+      "source_row": 0,
+      "source_col": 5,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_015.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_016.png",
+      "source_row": 2,
+      "source_col": 0,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_017.png",
+      "source_row": 0,
+      "source_col": 3,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_018.png",
+      "source_row": 3,
+      "source_col": 4,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_019.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_020.png",
+      "source_row": 0,
+      "source_col": 2,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_021.png",
+      "source_row": 4,
+      "source_col": 0,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_022.png",
+      "source_row": 6,
+      "source_col": 1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_023.png",
+      "source_row": 2,
+      "source_col": 3,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_024.png",
+      "source_row": 4,
+      "source_col": 5,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_025.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_026.png",
+      "source_row": 1,
+      "source_col": 3,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_027.png",
+      "source_row": 6,
+      "source_col": 6,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_028.png",
+      "source_row": 5,
+      "source_col": 3,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_029.png",
+      "source_row": 3,
+      "source_col": 2,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_030.png",
+      "source_row": 4,
+      "source_col": 2,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_031.png",
+      "source_row": 3,
+      "source_col": 6,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_032.png",
+      "source_row": 5,
+      "source_col": 0,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_033.png",
+      "source_row": 4,
+      "source_col": 6,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_034.png",
+      "source_row": 2,
+      "source_col": 6,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_035.png",
+      "source_row": 3,
+      "source_col": 0,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_036.png",
+      "source_row": 1,
+      "source_col": 5,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_037.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_038.png",
+      "source_row": 1,
+      "source_col": 1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_039.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    },
+    {
+      "file": "piece_040.png",
+      "source_row": 1,
+      "source_col": 4,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_041.png",
+      "source_row": 6,
+      "source_col": 2,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_042.png",
+      "source_row": 5,
+      "source_col": 4,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_043.png",
+      "source_row": 5,
+      "source_col": 5,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_044.png",
+      "source_row": 4,
+      "source_col": 1,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_045.png",
+      "source_row": 2,
+      "source_col": 2,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_046.png",
+      "source_row": 5,
+      "source_col": 6,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_047.png",
+      "source_row": 3,
+      "source_col": 3,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_048.png",
+      "source_row": 6,
+      "source_col": 5,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_049.png",
+      "source_row": 2,
+      "source_col": 4,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_050.png",
+      "source_row": 1,
+      "source_col": 6,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_051.png",
+      "source_row": 5,
+      "source_col": 1,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_052.png",
+      "source_row": 3,
+      "source_col": 1,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_053.png",
+      "source_row": 0,
+      "source_col": 0,
+      "angle_applied": 0,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_054.png",
+      "source_row": 4,
+      "source_col": 3,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_055.png",
+      "source_row": 2,
+      "source_col": 1,
+      "angle_applied": 270,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_056.png",
+      "source_row": 1,
+      "source_col": 0,
+      "angle_applied": 180,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": false
+    },
+    {
+      "file": "piece_057.png",
+      "source_row": -1,
+      "source_col": -1,
+      "angle_applied": 90,
+      "hflip_applied": false,
+      "vflip_applied": false,
+      "decoy": true
+    }
+  ]
+}

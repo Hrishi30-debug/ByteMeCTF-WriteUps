@@ -11,3 +11,8 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Python virtualenvs and caches
+.venv/
+__pycache__/
+*.pyc
