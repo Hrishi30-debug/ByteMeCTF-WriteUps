@@ -187,6 +187,9 @@ curl -i -b cookies.txt https://byteme-soul-split.onrender.com/soul/fragment
 </html>
 ```
 
+![Third Guardian Awakened](resources/soul_split_fragment.png)
+
+
 ## Step 5 — Automated Exploit Script
 
 For reproducible automated exploitation, we provide `solve_split.py`:

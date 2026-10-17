@@ -51,6 +51,8 @@ private external fun nativeFinal(chain: String): String
 
 Progression through the challenge requires satisfying four input verifiers in `verify(level, raw)`:
 
+![JADX Decompilation of Guardian Verifiers](resources/soul_ascension_jadx.png)
+
 ```kotlin
 private fun verify(level: Int, raw: String): Boolean {
     val s = raw.trim()
@@ -298,6 +300,8 @@ $ python solve_ascension.py
 
 [🏆] Plaintext Flag: OWASP{s0ul_4sc3nd3d_th3_f1fth_guardian}
 ```
+
+![Standalone Python Decryption Trace](resources/soul_ascension_solve.png)
 
 The ciphertext decrypts to:
 ```

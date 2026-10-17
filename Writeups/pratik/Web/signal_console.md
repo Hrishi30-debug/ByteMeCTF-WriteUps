@@ -266,6 +266,8 @@ curl -X POST https://byteme-morse-audio-ssti.onrender.com/signal \
      -F "audio=@exploit.wav"
 ```
 
+![Synthesized Audio Exploit Execution](resources/signal_console_solve.png)
+
 ### Server Response:
 ```html
 <section class="result" aria-labelledby="result-title">
@@ -273,6 +275,8 @@ curl -X POST https://byteme-morse-audio-ssti.onrender.com/signal \
   <pre>OWASP{m0rse_aud10_becomes_ssti}</pre>
 </section>
 ```
+
+![Server Decoded Result](resources/signal_console_result.png)
 
 The audio signal is decoded, parsed into the Jinja template expression, and rendered by the server engine to reveal the competition flag.
 

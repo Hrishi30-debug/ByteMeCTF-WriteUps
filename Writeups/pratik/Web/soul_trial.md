@@ -227,6 +227,8 @@ $ python solve_trial.py
 [🏆] FLAG: OWASP{the_soul_vault_has_been_opened}
 ```
 
+![Rate Limit Bypass & Fragment Accumulation](resources/soul_trial_solve.png)
+
 The server verifies that the target threshold of 20 fragments has been reached and outputs the flag:
 ```
 OWASP{the_soul_vault_has_been_opened}

@@ -60,6 +60,8 @@ The app requests `INTERNET` access and defines a single activity: `com.soulvault
 
 In JADX, decompiling `com.soulvault.MainActivity` exposes the button click listener triggering vault awakening:
 
+![JADX Decompilation of MainActivity](resources/soulvault_jadx.png)
+
 ```java
 public class MainActivity extends AppCompatActivity {
     private static final String BASE_URL = "https://byteme-soulvault-api.onrender.com";
@@ -316,6 +318,8 @@ $ python solve_soulvault.py
 
 [🏆] FLAG: OWASP{soul_vault_fragment_recovered}
 ```
+
+![Automated Proof-of-Work Execution](resources/soulvault_solve.png)
 
 The server accepted the cryptographic proof and returned the flag!
 

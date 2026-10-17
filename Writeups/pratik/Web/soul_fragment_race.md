@@ -66,6 +66,9 @@ A short moment later, the UI indicates the attempt transitioned from `reserved` 
 }
 ```
 
+![Single Attempt Rejected](resources/soul_fragment_race_rejected.png)
+
+
 ## Step 2 — Source Code Audit (`app.py`)
 
 Analyzing `app.py` reveals the underlying database schema and endpoint logic:
@@ -281,6 +284,8 @@ $ python solve_race.py
 
 [🏆] FLAG: OWASP{byteme_soul_fragment_race}
 ```
+
+![Race Condition Exploit Execution](resources/soul_fragment_race_solve.png)
 
 The server accepted the overlapping proofs and returned the flag!
 
