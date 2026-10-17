@@ -60,9 +60,11 @@ hidden ninja
 
 The keyword **"hidden ninja"** stands out as a clear clue toward the secret channel's identity.
 
-### Path B — Inspecting Video Comments
+### Path B — Inspecting Video Comments (Added Later as a Hint)
 
-Browsing through the uploaded videos and checking their comment sections—specifically on the video titled **`Obito sad [ AMV ] 💔`**—uncovers a comment:
+> **Note:** This comment was **not present initially** when the challenge was released. Since participants were struggling with the steep difficulty and the challenge sat at zero solves, the author later posted a comment from the secret account onto one of the videos as an additional breadcrumb to help players bridge the gap.
+
+Browsing through the uploaded videos and checking their comment sections—specifically on the video titled **`Obito sad [ AMV ] 💔`**—uncovers this newly added comment:
 
 - User: **`@hiddenninja5770`**
 - Comment: *"Yo"*
